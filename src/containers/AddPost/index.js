@@ -6,7 +6,7 @@ import { Metrix, NavigationService } from "../../config";
 import { AppAction } from "../../store/actions";
 import styles from "./styles";
 
-class Home extends Component {
+class AddPost extends Component {
 
     state = {
         title: "",
@@ -83,4 +83,4 @@ function mapDispatchToProps(dispatch) {
     }
 }
 
-export default connect(null, mapDispatchToProps)(Home);
+export default connect(null, mapDispatchToProps)(AddPost);
