@@ -19,7 +19,7 @@ const Standard = ({
         {leftIconComp || (
           <Icon name={leftIconName} color={Colors.Text} size={26} />
         )}
-      </TouchableOpacity>
+      </TouchableOpacity>           
     )}
 
     <Text style={styles.headingStyle}>{Heading}</Text>

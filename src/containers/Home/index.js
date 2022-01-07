@@ -15,11 +15,11 @@ const RenderItem = ({item}) => {
 };
 
 class Home extends Component {
-  unsubNavigationEvent = () => {};
+  unSubNavigationEvent = () => {};
 
   componentDidMount() {
     this.props.GetPosts();
-    this.unsubNavigationEvent = this.props.navigation.addListener(
+    this.unSubNavigationEvent = this.props.navigation.addListener(
       'focus',
       () => {
         this.flatListRef?.scrollToOffset({animated: true, offset: 0});
@@ -28,7 +28,7 @@ class Home extends Component {
   }
 
   componentWillUnmount() {
-    this.unsubNavigationEvent();
+    this.unSubNavigationEvent();
   }
 
   render() {
